@@ -1,7 +1,7 @@
 {
     "author": {
         "name": "huangwenming",
-        "email": "huangwenming@baidu.com",
+        "email": "1205597228@qq.com",
         "url": "https://github.com/huangwenming"
     },
     "bugs": {
@@ -39,7 +39,7 @@
     "maintainers": [
         {
             "name": "huangwenming",
-            "email": "huangwenming@baidu.com"
+            "email": "1205597228@qq.com"
         }
     ],
     "name": "html-webpack-cachesource-plugin",
