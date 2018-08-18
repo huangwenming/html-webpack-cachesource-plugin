@@ -1,9 +1,8 @@
 # html-webpack-cachesource-plugin
-===================
+-------------
 Based on the functions of [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) that simplifies creation of HTML files to serve your webpack bundles, we can cache the webpack bundles using localstorage to optimize the page loading speed.
 
 ## 插件功能
--------------
 
 1. 将原来webpack产出的bundle进行缓存处理，包含js和css，以达到二次打开页面秒开的效果。
 
@@ -21,6 +20,7 @@ Based on the functions of [html-webpack-plugin](https://github.com/jantimon/html
 
 使用html-webpack-cachesource-plugin产出后的代码是：
 
+头部的css处理：
 ```
 <head>
 <style rel="stylesheet" ls_id="a.xxxx.css"></style>
@@ -40,6 +40,10 @@ else {
 </script>
 </head>
 
+```
+
+body部分的js处理：
+```
 <body>
 <script type="text/javascript" ls_id="a.xxzz.js"></script>
 <script>
@@ -77,7 +81,6 @@ localstorage.setItem("a.xxzy.js", jsContent)
 ```
 
 ## 如何使用
--------------
 
 **<font style="color: red"> 前提条件：目前该插件尚不支持webpack4; 要求bundle产出不跨域; bundle的名字为`filename + hash + 后缀结构`</font>**
 
@@ -107,7 +110,6 @@ var HtmlWebpackCachePlugin = require('html-webpack-cachesource-plugin');
 ```
 
 ## 效果截图
--------------
 
 下面的截图来自实际项目：
 
