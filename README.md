@@ -88,6 +88,11 @@ localstorage.setItem("a.xxzy.js", jsContent)
 在此基础之上，添加一个`frontCache`参数
 
 ```
+ npm i --save-dev html-webpack-cachesource-plugin
+
+```
+
+```
 // webpack.conf.js
 var HtmlWebpackCachePlugin = require('html-webpack-cachesource-plugin');
  webpackConfig.plugins.push(
